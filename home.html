@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMar RP Server Homepage</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Voeg hier CSS links toe -->
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Navigatielinks -->
+            <a href="home.html">Home</a>
+            <a href="informatie.html">Informatie</a>
+            <a href="handboek.html">Handboek</a>
+            <a href="leidinggevenden.html">Leidinggevenden</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="headerpic"><img src="fotohomepage/KMar2.png"> </div>
+
+    <main>
+        <!-- Welkomstbanner -->
+        <section id="welkomstbanner">
+            <h1>Welkom bij de KMar RP Server</h1>
+            <p>De plek voor spannende missies en avonturen.</p>
+        </section>
+        
+
+        <!-- Over KMar -->
+        <section id="over-kmar">
+            <h2>Over de KMar in Regio Rotterdam</h2>
+            <p>Hier komt informatie over wat we doen in de RP server.</p>
+        </section>
+
+        <!-- Recente Activiteiten -->
+        <section id="recente-activiteiten">
+            <h2>Recente Activiteiten</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="fotohomepage/KMar1.png" alt="Afbeelding 1"></div>
+                    <div class="swiper-slide"><img src="fotohomepage/KMar2.png" alt="Afbeelding 2"></div>
+                    <div class="swiper-slide"><img src="fotohomepage/KMar3.png" alt="Afbeelding 3"></div>
+                    <!-- Voeg hier meer slides toe indien nodig -->
+                </div>
+                <!-- Als je navigatieknoppen wilt -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- Als je paginatie wilt -->
+                <div class="swiper-pagination"></div>
+            </div>
+            
+            <!-- Voeg hier content toe zoals tekst, afbeeldingen, etc. -->
+        </section>
+
+        <!-- Nieuws en Updates -->
+        <section id="nieuws-updates">
+            <h2>Nieuws/Updates</h2>
+            We hebben het handboek afgemaakt en deze kan je vinden onder het kopje 'Handboek'. Zorg er voor dat je deze hebt gelezen voor dat je volledig in dienst treed.
+            <!-- Voeg hier nieuws of updates toe -->
+        </section>
+    </main>
+
+    <footer>
+        <section id="contact-info">
+            <!-- <h3>Contactinformatie</h3> -->
+        </section>
+        <section id="disclaimer">
+            <p>Deze website is onderdeel van een RP server en is niet geaffilieerd met de echte Koninklijke Marechaussee.</p>
+        </section>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optionele parameters
+            loop: true,
+    
+            // Als je navigatieknoppen nodig hebt
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+    
+            // Als je paginatie wilt
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+    <!-- Voeg hier JavaScript toe -->
+</body>
+</html>

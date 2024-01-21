@@ -1,0 +1,117 @@
+/* Algemene stijl */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2b2a2a;
+    color: #333;
+    width: 70%;
+    position: absolute;
+    right: 15%;
+    height: auto;
+}
+
+header, footer {
+    background-color: #004680;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigatiebalk */
+nav a {
+    font-weight: bold;
+}
+
+/* Hoofdsectie */
+main {
+    padding: 20px;
+}
+
+#welkomstbanner {
+    background-color: #004680;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#contactgegevens {
+    margin-bottom: 20px;
+    padding: 15px;
+    color: white;
+    background-color: rgb(49, 49, 49);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    text-align: center;
+    
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    color: white;
+}
+
+/* Footer */
+footer {
+    font-size: 0.8em;
+}
+
+#contact-info, #disclaimer {
+    margin: 10px 0;
+}
+
+.headerpic {
+    position: relative; /* Nodig voor absolute positionering van de img binnenin */
+    height: 150px; /* De gewenste hoogte van de afbeelding */
+    overflow: hidden; /* Verbergt de delen van de afbeelding die buiten de container vallen */
+}
+
+.headerpic img {
+    width: 100%; /* Zorgt ervoor dat de afbeelding de breedte van de container neemt */
+    height: 100%; /* Voor het behouden van de verhouding */
+    min-height: 100%; /* Minimale hoogte om te verzekeren dat de afbeelding de container vult */
+    object-fit: cover; /* Snijdt de afbeelding bij zodat deze past */
+    object-position: center; /* Centreert de afbeelding */
+}
+
+#leidinggevenden .leidinggevenden-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #2b2a2a;
+    color: white;
+    gap: 20px; /* Geeft ruimte tussen de items */
+}
+
+.leidinggevende {
+    flex-basis: calc(50% - 20px); /* Neemt 50% van de container breedte minus de gap */
+    text-align: center;
+}
+
+.leidinggevende img {
+    width: 100%; /* Zorgt ervoor dat de afbeelding responsive is binnen de container */
+    height: auto; /* Behoudt de aspect ratio van de afbeelding */
+    max-width: 200px; /* Maximale breedte van de afbeelding */
+    margin-bottom: 10px; /* Ruimte onder de afbeelding */
+}
+
+/* Optionele Media Query voor responsiviteit */
+@media (max-width: 768px) {
+    .leidinggevende {
+        flex-basis: 100%; /* Op kleinere schermen neemt elke leidinggevende de volledige breedte in */
+    }
+}
+
+p2 {
+    font-style: italic;
+    color: #7e7e7e;
+}

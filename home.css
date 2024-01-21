@@ -1,0 +1,145 @@
+/* Algemene stijl */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2b2a2a;
+    color: #333;
+    width: 70%;
+    position: absolute;
+    right: 15%;
+    height: auto;
+}
+
+header, footer {
+    background-color: #004680;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigatiebalk */
+nav a {
+    font-weight: bold;
+}
+
+/* Hoofdsectie */
+main {
+    padding: 20px;
+}
+
+#welkomstbanner {
+    background-color: #004680;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#over-kmar, #recente-activiteiten, #nieuws-updates {
+    margin-bottom: 20px;
+    padding: 15px;
+    color: white;
+    background-color: rgb(49, 49, 49);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    font-size: 0.8em;
+}
+
+#contact-info, #disclaimer {
+    margin: 10px 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-container {
+    width: 100%; /* of een vaste breedte, bijv. 600px */
+    height: 400px; /* een vaste hoogte */
+    overflow: hidden; /* verbergt delen van afbeeldingen die buiten de container vallen */
+}
+
+.swiper-slide img {
+    width: 100%; /* zorgt ervoor dat de afbeelding zich aanpast aan de breedte van de container */
+    height: auto; /* behoudt de verhoudingen van de afbeelding */
+    max-height: 100%; /* zorgt ervoor dat de afbeelding niet groter is dan de container */
+    object-fit: cover; /* zorgt ervoor dat de afbeelding de container vult zonder de verhoudingen te verstoren */
+}
+
+/* Dit positioneert de container waar de bullets in zitten */
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 10px; /* Pas deze waarde aan om de bullets hoger of lager te plaatsen */
+    left: 0;
+}
+
+/* Dit stijlt de individuele bullets */
+.swiper-pagination-bullet {
+    width: 10px; /* Breedte van de bullet */
+    height: 10px; /* Hoogte van de bullet */
+    opacity: 0.0; /* Maak ze iets doorzichtig */
+    position: absolute;
+    
+    
+}
+
+/* Stijl voor de actieve bullet */
+.swiper-pagination-bullet-active {
+    opacity: 0; /* Niet-doorzichtige bullet voor de actieve slide */
+
+}
+
+.headerpic {
+    position: relative; /* Nodig voor absolute positionering van de img binnenin */
+    height: 150px; /* De gewenste hoogte van de afbeelding */
+    overflow: hidden; /* Verbergt de delen van de afbeelding die buiten de container vallen */
+}
+
+.headerpic img {
+    width: 100%; /* Zorgt ervoor dat de afbeelding de breedte van de container neemt */
+    height: 100%; /* Voor het behouden van de verhouding */
+    min-height: 100%; /* Minimale hoogte om te verzekeren dat de afbeelding de container vult */
+    object-fit: cover; /* Snijdt de afbeelding bij zodat deze past */
+    object-position: center; /* Centreert de afbeelding */
+}
+
+.swiper-button-prev, .swiper-button-next {
+    top: 100%; /* Positie in het midden van de container */
+    transform: translateY(320%); /* Schuift de pijl omhoog met de helft van zijn hoogte voor centrering */
+}
