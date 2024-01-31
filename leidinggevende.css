@@ -102,6 +102,7 @@ footer {
     height: auto; /* Behoudt de aspect ratio van de afbeelding */
     max-width: 200px; /* Maximale breedte van de afbeelding */
     margin-bottom: 10px; /* Ruimte onder de afbeelding */
+    border-radius: 100%;
 }
 
 /* Optionele Media Query voor responsiviteit */
